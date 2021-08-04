@@ -1,0 +1,67 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.box1 {
+    border-right: 1px solid red;
+    width: 40%;
+    height: 100vh;
+    background: black;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.code-Container{
+    border: 1px solid chocolate ;
+    width: 70%;
+    height: 90%;
+    overflow-y: auto;
+    color: white;
+}
+.code-Container::-webkit-scrollbar{
+    display: none;
+}
+
+.box1>.button-Container{
+    width: 20%;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.box1>.button-Container>.button{
+    padding: 5px;
+    border-radius: 25px;
+    cursor: pointer; //光标变手型
+}
+
+.box2 {
+    width: 60%;
+    height: 100vh;
+    background: black;
+    float: right;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 800px){
+    .box1 {
+        border: 1px solid red;
+        width: 100vw;
+        height: 40vh;
+    }
+    .box2 {
+        width: 100vw;
+        height: 60vh;
+        background: black;
+        display: flex;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+    }
+}

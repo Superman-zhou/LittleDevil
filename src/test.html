@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta content="width=device-width; initial-scale=1.0; maximum-scale=1; user-scalable=no;" id="viewport"
+              name="viewport">
+        <title>小恶魔</title>
+        <link href="style.js" rel="stylesheet">
+        <link href="index.css" rel="stylesheet">
+        <style class="style"></style>
+    </head>
+    <body>
+        <div class="box1">
+            <div class="code-Container"></div>
+            <div class="button-Container">
+                <button class="button btnPause">暂停</button>
+                <button class="button btnPlay">继续</button>
+                <button class="button btnSlow">慢速</button>
+                <button class="button btnNormal">中速</button>
+                <button class="button btnFast">快速</button>
+                <button class="button btnAgain">从头开始</button>
+            </div>
+        </div>
+        <div class="box2">
+            <!--            阴影-->
+            <div class="shadow"></div>
+            <!--                头-->
+            <div class="em-head">
+                <!--                    眼皮-->
+                <div class="eyelid left">
+                    <!--                        眼眶-->
+                    <div class="eyeFrame left">
+                        <!--                            眼珠-->
+                        <div class="eyeball left"></div>
+                    </div>
+                </div>
+                <div class="eyelid right">
+                    <div class="eyeFrame right">
+                        <div class="eyeball left"></div>
+                    </div>
+                </div>
+                <!--                    上嘴唇-->
+                <div class="lip upper"></div>
+                <div class="lip below"></div>
+            </div>
+        </div>
+        <audio id="hello" src="audios/hello.wav"></audio>
+        <script src="test.js" type="module"></script>
+    </body>
+</html>
